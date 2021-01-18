@@ -18,8 +18,13 @@ public class Practica {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int numeros[] = new int[10];
+        int size;
         Scanner sc = new Scanner(System.in);
+        do{
+        System.out.println("Cuantos numeros tendra su array?(10 max)");
+        size=sc.nextInt();
+        } while (size>10);
+        int numeros[]=new int [size];
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Introduzca numero");
             numeros[i] = sc.nextInt();
