@@ -23,6 +23,13 @@ public class Practica {
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Introduzca numero");
             numeros[i] = sc.nextInt();
+            for(int h=0;h<i;h++){
+                if (numeros[h]==numeros[i]){
+                    System.out.println("ERROR: Numero repetido");
+                    System.out.println("Anote un numero valido");
+                    i--;
+                }
+            }
         }
         Arrays.sort(numeros);
         System.out.println("Sus numeros son");
