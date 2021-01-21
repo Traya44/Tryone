@@ -19,7 +19,7 @@ public class Practica {
     public static void main(String[] args) {
         // TODO code application logic here
         int size, numero;
-        boolean comparador;
+        boolean comparador, valsize;
         Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Cuantos numeros tendra su array?(10 max)");
