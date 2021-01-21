@@ -24,7 +24,8 @@ public class Practica {
         do {
             System.out.println("Cuantos numeros tendra su array?(10 max)");
             size = sc.nextInt();
-        } while (size > 10);
+            valsize=fvalsize(size);
+        } while (valsize==false);
         int numeros[] = new int[size];
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Introduzca numero");
@@ -43,6 +44,13 @@ public class Practica {
         for (int i = 0; i < numeros.length; i++) {
             System.out.println(numeros[i]);
         }
+    }
+
+
+    public static boolean fvalsize(int size) {
+        if (size<0 || size>10)
+            return false;
+        return true;
     }
 
     public static boolean buscarNumero(int n[], int numero) {
